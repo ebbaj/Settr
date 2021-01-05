@@ -1,0 +1,129 @@
+@font-face {
+    font-family: Gilroy;
+    src: url('resources/fonts/Gilroy/Gilroy-Light.otf') format('opentype');
+    font-weight: 200;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url('resources/fonts/Gilroy/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url('resources/fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url('resources/fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url('resources/fonts/Gilroy/Gilroy-ExtraBold.otf') format('opentype');
+    font-weight: 800;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url('resources/fonts/Gilroy/Gilroy-Heavy.ttf') format('truetype');
+    font-weight: 900;
+}
+@font-face {
+    font-family: Druk-Text-Wide-Web-Medium;
+    src: url('resources/fonts/druk/Druk\ Text\ Wide\ Web\ Medium\ Regular.otf') format('opentype');
+}
+ 
+body{
+    font-family: Gilroy;
+    color: white;
+    background-color: #000;
+}
+
+.bg-grid{
+    background-image: url(bg-pattern-md.png);
+    height: 100vh;
+    background-size: 25% 100%; 
+}
+
+@media screen and (max-width: 600px) {
+    .bg-grid{
+        background-image: url(bg-pattern-sm.png);
+    }
+}
+
+.menu {
+    display: flex;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: Druk-Text-Wide-Web-Medium;
+}
+
+.menu-container {
+    width: 75%;
+}
+
+.logo-container {
+    width: 25%;
+    height: 22px;
+    display: inline-block;
+    
+}
+
+.logo-container img {
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.menu-container div {
+    width: 33%; 
+    height: 54px;
+    float: left;
+    padding-top:22px;
+    box-sizing: border-box;
+}
+
+/*----footer----*/
+.info-container div{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.info-container div:first-child {
+    padding-left: 0px;
+    padding-right: 15px;
+}
+
+.info-container div:last-child{
+    padding-left: 15px;
+    padding-right: 0px;
+}
+
+footer{
+    padding: 48px 48px 128px 48px;
+    z-index: 9;
+}
+
+.info-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+h6{
+    font-size: 16px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    margin-bottom: 8px;
+}
+
+a{
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+    color: rgb(215, 215, 215);
+    display: block
+}
