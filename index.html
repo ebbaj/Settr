@@ -5,21 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
+    <nav>
+        <div class="logo">
+            <img src="assets/icons/settrLogotype-w.svg" alt="SETTR Logo white">
+        </div>
+    
+        <div class="openMenu"><img src="/assets/icons/hamburger.svg" alt="Hamburger"></div>
+    
+        <div class="mobileMainMenu">
+    
+            <div class="closeMenuNavBar">
+    
+                <div class="logoinWmenu">
+                    <a href=""><img src="/assets/icons/settrLogotype-black.svg" alt=""></a>
+                </div>
+                <div class="mobilMenuIcons">
+                    <div class="closeMenu">
+                        <img src="/assets/icons/crosssign.svg" alt="crosssign">
+                    </div>
+                    <div class="usermobilMenu">
+                        <img src="/assets/icons/usersign.svg" alt="crosssign">
+                    </div>
+                    <div class="shopingBagmobilMenu">
+                        <img src="/assets/icons/shopingBag.svg" alt="crosssign">
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="navlinkmobil">
+                <a href="#" class="navlinkmobil-a" id="mobilNavFirst" onclick="mobilNavFirstSub()">ABOUT US</a>
+                <div class="navlinkmobil-submenu" id="mobilNavFirstSub">
+                    <a href="">BECOME A PARTNER</a>
+                    <a href="">BECOME A CURATOR</a>
+                </div>
+                <a href="#" class="navlinkmobil-a" id="mobilNavSecond" onclick="mobilNavSecondSub()">INFO</a>
+                <div class="navlinkmobil-submenu" id="mobilNavSecondSub">
+                    <a href="">ORDERS AND SHIPPING</a>
+                    <a href="">PRICING AND PAYMENT</a>
+                    <a href="">FAQ</a>
+                </div>
+                <a href="#" class="navlinkmobil-a" id="mobilNavThird" onclick="mobilNavThirdSub()">CONTACT</a>
+                <!-- <div class="navlinkmobil-submenu" id="mobilNavThirdSub">
+                                                                                                                        
+                                                                                                                        </div> -->
+            </div>
+    
+    
+            <div class="mobilIcons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+    
+        </div>
+    
+    
+    </nav>
+
     <div class="header-container">
-    <div class="bg-grid">
-    <div class="desktop-menu menu">
-        <div class="logo-container">
-            <img src="logo.png" alt="">
-        </div>
-        <div class="menu-container">
-            <div><a>About Us</a></div>
-            <div><a>Info</a></div>
-            <div><a>Contact</a></div>
-        </div>
-        </div>
-        </div>
+        <div class="desktop-menu menu">
+            <div class="logo-container">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="menu-container">
+                <div><a>About Us</a></div>
+                <div><a>Info</a></div>
+                <div class="contact-container"><a>Contact</a></div>
+                <div class="cont-icons">
+                    <img src="/assets/icons/user.svg" alt="crosssign">
+                    <img src="/assets/icons/bag.svg" alt="crosssign">
+                </div>
+            </div>
+
+            </div>
+            </div>
 
     <main></main>
 
@@ -33,5 +95,6 @@
    </div>
     
 </div>
+<script src="navigation.js"></script>
 </body>
 </html>
