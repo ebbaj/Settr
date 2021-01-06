@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    font-family: 'Gilroy', 'Arial', sans-serif;
+}
+
+nav {
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .mainMenu {
+    display: flex;
+    align-items: flex-end;
+    list-style: none;
+}
+
+nav .mobileMainMenu {
+    display: none;
+    align-items: flex-end;
+    list-style: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: flex-end; */
+    background: #ffffff;
+    color: #000;
+    transition: transform .5s ease;
+}
+
+.navlinkmobil-submenu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: all .5s;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.navlinkmobil-submenu a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.navlinkmobil-submenu a:first-of-type {
+    margin-top: 20px;
+}
+
+.navlinkmobil-submenu a:last-of-type {
+    margin-bottom: 20px;
+}
+
+.mobilMenuIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mobilMenuIcons img {
+    height: 14px;
+    width: 14px;
+    display: block;
+}
+
+.usermobilMenu {
+    margin-right: 20px;
+}
+
+.shopingBagmobilMenu {
+    margin-right: 20px;
+}
+
+.navlink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav .mainMenu .navlink a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+nav .mainMenu a:hover {
+    letter-spacing: normal;
+}
+
+nav .openMenu {
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .openMenu img {
+    display: block;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+    display: none;
+    cursor: pointer;
+}
+
+.mobilIcons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobilIcons i {
+    margin: 10px 10px 20px 10px;
+    font-size: 30px;
+}
+
+.fa-facebook:hover {
+    color: rgb(0, 110, 255);
+}
+
+.fa-instagram:hover {
+    color: rgb(255, 0, 191);
+}
+
+nav .logo {
+    margin: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media(max-width: 800px) {
+    .closeMenuNavBar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logoinWmenu {
+        margin: 20px;
+    }
+    nav .logo {
+        color: #000;
+        margin: 20px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    nav .mainMenu {
+        display: none;
+    }
+    nav .mobileMainMenu {
+        transform: translateX();
+    }
+    nav .closeMenuNavBar {
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .navlink {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    nav .mainMenu .navlink a {
+        color: #000;
+        font-weight: bolder;
+        font-size: xx-large;
+        transition: .321s;
+    }
+    .navlinkmobil {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        flex-grow: 1;
+        margin-top: 10px;
+    }
+    .navlinkmobil a:not(:first-of-type) {
+        margin-top: 40px;
+    }
+    .navlinkmobil .navlinkmobil-a {
+        margin-right: 20px;
+        text-decoration: none;
+        color: #000;
+        font-weight: bolder;
+        font-size: 45px;
+        transition: .321s;
+    }
+    .navlinkmobil .navlinkmobil-a:hover {
+        letter-spacing: 5px;
+    }
+    .closeMenu {
+        margin: 20px;
+    }
+    nav .mainMenu .closeMenu {
+        margin: 20px;
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu a:hover {
+        background: none;
+        letter-spacing: 5px;
+    }
+    .icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
