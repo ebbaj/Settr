@@ -67,13 +67,23 @@ body {
     font-family: Gilroy;
     color: white;
     background-color: #000;
-}
-
-body {
     background-image: url(/assets/icons/bg-lg.png);
     height: 100vh;
     background-size: 25% 100%;
 }
+
+body.white-bg{
+    background-color: white;
+    color: black;
+}
+
+body.white-bg a {
+    color: black;
+}
+
+
+
+
 
 @media screen and (max-width: 767px) {
     body {
@@ -81,6 +91,9 @@ body {
         background-size: 100% 100%;
     }
     .header-container {
+        display: none;
+    }
+    .social-container{
         display: none;
     }
 }
@@ -133,20 +146,30 @@ body {
     width: 5%;
 }
 
-.menu-container .info-container                                   {
+.menu-container .info-container {
     padding-left: .4%;
 }
 
-.social a {
+.social-container a  {
     text-decoration: none;
     font-family: Druk;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+}
+
+.social-container{
+    margin-top: 80rem;
+    
 }
 
 .insta {
     float: right;
+    margin-right: 4rem;
+}
+
+.fb{
+    margin-left: 4rem;
 }
 
 /*----footer----*/
@@ -399,6 +422,7 @@ nav .mainMenu .closeMenu, .icons i {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    color: black;
 }
 
 .mobilIcons i {
@@ -502,5 +526,6 @@ nav .logo {
     .icons i {
         display: inline-block;
         padding: 12px;
+       
     }
 }
