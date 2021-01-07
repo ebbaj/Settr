@@ -72,36 +72,15 @@ body {
     background-size: 25% 100%;
 }
 
-body.white-bg{
+/* white bg */
+
+body.white-bg {
     background-color: white;
     color: black;
 }
 
 body.white-bg a {
     color: black;
-}
-
-
-
-
-
-@media screen and (max-width: 767px) {
-    body {
-        background-image: url(/assets/icons/bg-sm.png);
-        background-size: 100% 100%;
-    }
-    .header-container {
-        display: none;
-    }
-    .social-container{
-        display: none;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .logo {
-        display: none;
-    }
 }
 
 .menu {
@@ -150,7 +129,7 @@ body.white-bg a {
     padding-left: .4%;
 }
 
-.social-container a  {
+.social-container a {
     text-decoration: none;
     font-family: Druk;
     color: rgb(255, 255, 255);
@@ -158,9 +137,8 @@ body.white-bg a {
     font-size: 1.3rem;
 }
 
-.social-container{
+.social-container {
     margin-top: 80rem;
-    
 }
 
 .insta {
@@ -168,11 +146,16 @@ body.white-bg a {
     margin-right: 4rem;
 }
 
-.fb{
+.fb {
     margin-left: 4rem;
 }
 
 /*----footer----*/
+
+body.plain-bg {
+    background-image: none;
+    background-color: white;
+}
 
 .info-container .col {
     padding-left: 15px;
@@ -192,6 +175,7 @@ body.white-bg a {
 footer {
     padding: 2.4rem 1.6rem;
     z-index: 9;
+    background-color: black;
 }
 
 .container-fluid {
@@ -266,6 +250,7 @@ input, textarea, select {
     margin-bottom: 1rem;
 }
 
+
 footer .btn.btn-primary {
     background: #fff;
     color: #000;
@@ -283,22 +268,6 @@ footer .btn.btn-primary {
     outline: none;
 }
 
-@media screen and (max-width: 767px) {
-    .container-fluid {
-        padding: 2.4rem 0 9.2rem 0;
-        display: block;
-        box-sizing: border-box;
-    }
-    .info-container .col:first-child {
-        padding-left: 15px;
-    }
-    footer a, h6, footer p {
-        font-size: 1.8rem;
-    }
-    footer a {
-        line-height: 2.8rem;
-    }
-}
 
 nav {
     color: #fff;
@@ -444,6 +413,51 @@ nav .logo {
     cursor: pointer;
 }
 
+@media screen and (max-width: 767px) {
+    body {
+        background-image: url(/assets/icons/bg-sm.png);
+        background-size: 100% 100%;
+    }
+    .header-container {
+        display: none;
+    }
+    .social-container {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container-fluid {
+        padding: 2.4rem 0 9.2rem 0;
+        display: block;
+        box-sizing: border-box;
+    }
+    .info-container .col:first-child {
+        padding-left: 15px;
+    }
+    footer a, h6, footer p {
+        font-size: 1.8rem;
+    }
+    footer a {
+        line-height: 2.8rem;
+    }
+    footer {
+        padding: 2em;
+    }
+    form{
+        margin-right: 1em;
+    }
+    .faq, .about, .news{
+        padding-top: inherit;
+    }
+}
+
 @media(max-width: 767px) {
     .closeMenuNavBar {
         width: 100%;
@@ -526,6 +540,16 @@ nav .logo {
     .icons i {
         display: inline-block;
         padding: 12px;
-       
+    }
+}
+
+@media screen and (max-width: 812px) and (min-width: 768px){
+    .menu-container .contact-container {
+        width: 24%;
+        
+    }
+    
+    .menu-container .cont-icons {
+        width: 9%;
     }
 }
