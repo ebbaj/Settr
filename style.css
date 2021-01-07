@@ -70,14 +70,14 @@ body {
 }
 
 body {
-    background-image: url(bg-lg.png);
+    background-image: url(/assets/icons/bg-lg.png);
     height: 100vh;
     background-size: 25% 100%;
 }
 
 @media screen and (max-width: 767px) {
     body {
-        background-image: url(bg-sm.png);
+        background-image: url(/assets/icons/bg-sm.png);
         background-size: 100% 100%;
     }
     .header-container {
