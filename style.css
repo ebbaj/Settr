@@ -133,7 +133,7 @@ body {
     width: 5%;
 }
 
-.menu-container .info-container                                   {
+.menu-container .info-container {
     padding-left: .4%;
 }
 
@@ -148,6 +148,7 @@ body {
 .insta {
     float: right;
 }
+
 
 /*----footer----*/
 
@@ -218,7 +219,8 @@ footer input[type="email"] {
     padding-left: 10px;
 }
 
-select.form-control.default, .form-control {
+select.form-control.default,
+.form-control {
     height: 4rem !important;
     border: 1px solid #d6d6d6;
     border-radius: 2px;
@@ -233,7 +235,9 @@ select.form-control.default, .form-control {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     font-family: 'Gilroy', sans-serif;
     font-weight: 300;
 }
@@ -269,7 +273,9 @@ footer .btn.btn-primary {
     .info-container .col:first-child {
         padding-left: 15px;
     }
-    footer a, h6, footer p {
+    footer a,
+    h6,
+    footer p {
         font-size: 1.8rem;
     }
     footer a {
@@ -388,7 +394,8 @@ nav .openMenu img {
     display: block;
 }
 
-nav .mainMenu .closeMenu, .icons i {
+nav .mainMenu .closeMenu,
+.icons i {
     display: none;
     cursor: pointer;
 }
