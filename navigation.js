@@ -76,7 +76,7 @@ let bottomImg = document.querySelector(".bottomImg");
       breakpoints: {
       0: { /* when window >=0px - webflow mobile landscape/portriat */
         slidesPerView: 1,
-        spaceBetween: 20,
+        spaceBetween: 65,
       },
       767: { /* when window >= 767px - webflow tablet */
         slidesPerView: 2,
