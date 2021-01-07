@@ -624,6 +624,10 @@ nav .logo {
       font-weight: 800;
       z-index:3;
     }
+    span{
+        visibility: hidden;
+
+    }
    
 
 
@@ -719,6 +723,16 @@ nav .logo {
         position:relative;
     }
     .container {
-        margin-top: -6rem;
+        margin-top:-1rem;
+    }
+    .bottomImg {
+        top: 0%;
+      
+      }
+    span {
+        visibility:visible;
+    }
+    .swiper-slide > div {
+        display:none;
     }
 }
