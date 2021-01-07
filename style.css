@@ -576,7 +576,7 @@ nav .logo {
     }
     .container {
         display:flex;
-        margin-top:5rem;
+        margin-top:8rem;
        
         
         
@@ -591,6 +591,8 @@ nav .logo {
     .swiper-wrapper{
         display:flex;
         height:70vh;
+        /*align-items: center;
+        height:100%;*/
       
         
       
@@ -708,5 +710,15 @@ nav .logo {
     .icons i {
         display: inline-block;
         padding: 12px;
+    }
+    .left {
+        visibility: hidden;
+        
+    }
+    img {
+        position:relative;
+    }
+    .container {
+        margin-top: -6rem;
     }
 }
