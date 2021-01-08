@@ -4,32 +4,42 @@ const openMenu = document.querySelector('.openMenu');
 const mobilNavFirstSubElement = document.querySelector('#mobilNavFirstSub');
 const mobilNavSecondSubElement = document.querySelector('#mobilNavSecondSub');
 const mobilNavThirdSubElement = document.querySelector('#mobilNavThirdSub');
+let mobileRightcontent = document.querySelector('.mobileRightcontent');
+let ipadContent =document.querySelector('.ipadContent');
+let leftLink =document.querySelector('.leftLink');
+let rightLink=document.querySelector('.rightLink')
 
 let bottomImg = document.querySelector(".bottomImg");
-    console.log(bottomImg);
+    //console.log(bottomImg);
     let rightContent = document.querySelector(".rightContent");
     let leftContent = document.querySelector(".leftContent");
     let sliderContent= ["LEARN MORE","CUSTOMERS","ECOSYSTEM","CREATORS","BRANDS"];
+    let mobileContent= ["ECOSYSTEM","CREATORS","BRANDS","LEARN MORE","CUSTOMERS"];
+    let iPadContent= ["CUSTOMERS","ECOSYSTEM","CREATORS","BRANDS","LEARN MORE"]
     let bottomSlide;
     var swiper = new Swiper('.swiper-container', {
         on: {
             slideChange: function(e) {
              //https://github.com/nolimits4web/Swiper/pull/1697   
     var realIndex = e.slides.eq(e.activeIndex).attr('data-swiper-slide-index');
-    console.log(realIndex);
+    //console.log(realIndex);
     var currentSlide = e.slides[realIndex];
-    if (realIndex!=0){
+    /*if (realIndex!=0){
       bottomSlide=e.slides[realIndex-1];
     }else {
       bottomSlide=bottomImg;
+    }*/
+    
+    //console.log(bottomSlide);
+    let ipadIndex = Number(realIndex)-1;
+    console.log(ipadIndex);
+    if (ipadIndex === -1){
+      ipadIndex=4;
     }
-    
-    console.log(bottomSlide);
-    
-    var rightIndex = Number(realIndex)+1;
+    let rightIndex = Number(realIndex)+1;
     //var currentRight= e.slides[rightIndex];
-    var leftIndex = Number(realIndex)+2;
-    console.log(leftIndex)
+    let leftIndex = Number(realIndex)+2;
+    console.log(rightIndex)
     if (leftIndex===5){
         leftIndex=0;
     }
@@ -44,10 +54,12 @@ let bottomImg = document.querySelector(".bottomImg");
    
     rightContent.innerHTML=sliderContent[rightIndex];
     leftContent.innerHTML=sliderContent[leftIndex];
+    mobileRightcontent.innerHTML=mobileContent[leftIndex];
+    ipadContent.innerHTML=iPadContent[ipadIndex];
     console.log(currentSlide);
-    console.log(sliderContent[rightIndex]);
-    console.log(sliderContent[leftIndex]);
-     console.log(realIndex);
+    //console.log(sliderContent[rightIndex]);
+    console.log(mobileContent[leftIndex]);
+    //console.log(realIndex);
     
     // do whatever
         
