@@ -582,30 +582,24 @@ img {
       align-items: center;*/
 }
 
-
-/* Pagination Bullets */
-
 .swiper-pagination {
     position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
 }
 
 .swiper-pagination-bullet {
-    color: #9795df;
+    color: #c1bff5;
     size: 30px;
     border: 2px solid #9795df;
     border-radius: 100%;
     margin: 5px;
 }
 
-
-/* Pagination Bullets CSS END */
-
- :root {
+:root {
     --swiper-theme-color: rgb(253, 252, 252);
     --swiper-navigation-size: 20px;
 }
