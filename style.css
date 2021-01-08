@@ -589,6 +589,7 @@ img {
     bottom: 0;
     margin: auto;
     margin-bottom: 45px;
+    z-index: 1;
 }
 
 .swiper-pagination-bullet {
@@ -597,6 +598,12 @@ img {
     border: 2px solid #9795df;
     border-radius: 100%;
     margin: 5px;
+    outline: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    z-index: 1;
 }
 
 :root {
@@ -670,6 +677,10 @@ span {
     }
     nav .mainMenu {
         display: none;
+    }
+    .mobileMainMenu {
+        position: relative;
+        z-index: 1000;
     }
     nav .mobileMainMenu {
         transform: translateX();
