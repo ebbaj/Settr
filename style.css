@@ -298,6 +298,31 @@ footer .btn.btn-primary {
 
 /* Hamed's css */
 
+.swiper-pagination {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    margin-bottom: 45px;
+    z-index: 1;
+}
+
+.swiper-pagination-bullet {
+    color: #c1bff5;
+    size: 30px;
+    border: 2px solid #9795df;
+    border-radius: 100%;
+    margin: 5px;
+    outline: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    z-index: 1;
+}
+
 @media screen and (max-width: 767px) {
     .container-fluid {
         padding: 2.4rem 0 9.2rem 0;
@@ -314,6 +339,28 @@ footer .btn.btn-primary {
     }
     footer a {
         line-height: 2.8rem;
+    }
+    .swiper-pagination {
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        margin-bottom: 45px;
+        z-index: 1;
+    }
+    .swiper-pagination-bullet {
+        color: #c1bff5;
+        size: 30px;
+        border: 2px solid #9795df;
+        border-radius: 100%;
+        margin: 5px;
+        outline: none;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        z-index: 1;
     }
 }
 
@@ -622,30 +669,6 @@ main img {
     align-items: center;*/
 }
 
-.swiper-pagination {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    margin-bottom: 45px;
-    z-index: 1;
-}
-
-.swiper-pagination-bullet {
-    color: #c1bff5;
-    size: 30px;
-    border: 2px solid #9795df;
-    border-radius: 100%;
-    margin: 5px;
-    outline: none;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    z-index: 1;
-}
-
  :root {
     --swiper-theme-color: rgb(253, 252, 252);
     --swiper-navigation-size: 20px;
@@ -711,7 +734,7 @@ h3 {
 }
 
 .swiper-pagination {
-    color: azure;
+    color: #c1bff5;
 }
 
 .mobile {
