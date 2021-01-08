@@ -595,6 +595,7 @@ img {
 }
 
 .swiper-pagination-bullet {
+    color: #9795df;
     size: 30px;
     border: 2px solid #9795df;
     border-radius: 100%;
