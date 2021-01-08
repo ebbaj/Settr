@@ -383,78 +383,6 @@ video {
   width: 3.5rem;
 }
 
-/*--- NEWSLETTER SECTION ---*/
-.newsletter {
-  display: flex;
-  height: 30vh;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.newsletter-content {
-  text-align: left;
-  background: var(--white-text);
-  border-radius: 30px;
-  padding: 2rem;
-  border: 1px solid #00000093;
-}
-
-.newsletter h3 {
-  font-family: "Druk Wide Cy Web";
-  font-size: 1.25rem;
-  text-transform: uppercase;
-  color: black;
-  -webkit-text-fill-color: var(
-    --white-text
-  ); /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-}
-
-.newsletter p {
-  font-family: "Gilroy";
-  font-size: 1.125rem;
-  color: var(--black-text);
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.newsletter-btn {
-  width: 3.5rem;
-  height: 2.4rem;
-  padding: 0.3rem;
-  padding-bottom: 0.1rem;
-
-  font-family: "Gilroy-Bold";
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  color: var(--white-text);
-  background-color: var(--footer-background);
-  border-radius: 7px;
-  letter-spacing: 1.4px;
-  line-height: 20px;
-  outline: none;
-  border: none;
-  transition: 0.3s;
-}
-
-.newsletter-btn:hover {
-  color: var(--black-text);
-  background-color: var(--dark-text-hover);
-}
-
-.newsletter-input {
-  width: 17.6rem;
-  height: 2.4rem;
-  padding: 0.3rem;
-  border-radius: 7px;
-  outline: none;
-  border: 1px solid #c4c4c4;
-  font-family: "Gilroy";
-  font-size: 1rem;
-  border: 1px solid #c4c4c4;
-}
-
 /*--- FOOTER ---*/
 
 footer {
@@ -536,19 +464,16 @@ footer {
     height: 454.5px;
   }
 
-  .newsletter {
-    justify-content: left;
-  }
-
-  .newsletter-content {
-    margin-left: 3rem;
-  }
-
   .section-one p,
   .section-two p,
   .section-three p,
   .section-four p {
     font-size: 1.2rem;
+  }
+
+  .section-four .section-content {
+    padding: 0;
+    margin: 0;
   }
 }
 
