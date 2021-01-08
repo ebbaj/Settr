@@ -128,8 +128,7 @@ nav ul li a:hover {
 }
 
 .section-one,
-.section-two,
-.section-four {
+.section-two {
   height: 90vh;
 }
 
@@ -332,12 +331,10 @@ video {
   margin-left: 4rem;
 }
 
-/*--- NEWSLETTER SECTION ---*/
-
-.newsletter-section {
-}
-
 /*--- SECTION FOUR ---*/
+.section-four {
+  height: 80vh;
+}
 
 .section-four .section-content {
   margin-bottom: 1rem;
@@ -350,15 +347,17 @@ video {
 }
 
 .form-group input {
-  width: 17rem;
+  width: 17.6rem;
   height: 2.4rem;
   padding: 0.3rem;
+  outline: none;
 }
 
 .form-group input,
 .form-textarea textarea {
   font-family: "Gilroy";
   font-size: 1rem;
+  border: 1px solid #c4c4c4;
 }
 
 .form-group,
@@ -366,12 +365,10 @@ video {
   margin-bottom: 1rem;
 }
 
-.form-textarea {
-  width: 36rem;
-}
-
 .form-textarea textarea {
   padding: 0.3rem;
+  outline: none;
+  width: 100%;
 }
 
 #name {
@@ -386,6 +383,78 @@ video {
   width: 3.5rem;
 }
 
+/*--- NEWSLETTER SECTION ---*/
+.newsletter {
+  display: flex;
+  height: 30vh;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.newsletter-content {
+  text-align: left;
+  background: var(--white-text);
+  border-radius: 30px;
+  padding: 2rem;
+  border: 1px solid #00000093;
+}
+
+.newsletter h3 {
+  font-family: "Druk Wide Cy Web";
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: black;
+  -webkit-text-fill-color: var(
+    --white-text
+  ); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.newsletter p {
+  font-family: "Gilroy";
+  font-size: 1.125rem;
+  color: var(--black-text);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter-btn {
+  width: 3.5rem;
+  height: 2.4rem;
+  padding: 0.3rem;
+  padding-bottom: 0.1rem;
+
+  font-family: "Gilroy-Bold";
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--white-text);
+  background-color: var(--footer-background);
+  border-radius: 7px;
+  letter-spacing: 1.4px;
+  line-height: 20px;
+  outline: none;
+  border: none;
+  transition: 0.3s;
+}
+
+.newsletter-btn:hover {
+  color: var(--black-text);
+  background-color: var(--dark-text-hover);
+}
+
+.newsletter-input {
+  width: 17.6rem;
+  height: 2.4rem;
+  padding: 0.3rem;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid #c4c4c4;
+  font-family: "Gilroy";
+  font-size: 1rem;
+  border: 1px solid #c4c4c4;
+}
+
 /*--- FOOTER ---*/
 
 footer {
@@ -393,9 +462,8 @@ footer {
   height: 50vh;
   width: 100%;
   background-color: var(--footer-background);
-  /* z-index: 10; */
+  z-index: 10;
   margin: 50px auto auto auto;
-  /*z-index: -1;*/
 }
 
 /* Media Query */
@@ -431,10 +499,69 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .read-more-link {
+    display: none;
+  }
+
+  .section-two .section-content,
+  .section-four .section-content,
+  .section-one .section-content {
+    text-align: left;
+    width: 80%;
+    margin-left: 0;
+    padding-left: 0;
+    justify-content: left;
+  }
+
+  .section-four {
+    align-items: flex-start;
+    margin-left: 3rem;
+  }
+
+  .section-one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-one .section-content {
+    margin-left: 3rem;
+  }
+
+  .phone {
+    margin-right: 3rem;
+  }
+
+  #small-phone {
+    width: 236.25px;
+    height: 454.5px;
+  }
+
+  .newsletter {
+    justify-content: left;
+  }
+
+  .newsletter-content {
+    margin-left: 3rem;
+  }
+
+  .section-one p,
+  .section-two p,
+  .section-three p,
+  .section-four p {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 481px) {
   .section-content {
     padding: 1.3rem;
+  }
+
+  .shop-images {
+    flex-wrap: wrap;
+  }
+
+  .section-two .section-content {
+    margin-bottom: 1rem;
   }
 }
