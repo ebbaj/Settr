@@ -7,7 +7,8 @@ const mobilNavThirdSubElement = document.querySelector('#mobilNavThirdSub');
 let mobileRightcontent = document.querySelector('.mobileRightcontent');
 let ipadContent =document.querySelector('.ipadContent');
 let leftLink =document.querySelector('.leftLink');
-let rightLink=document.querySelector('.rightLink')
+let rightLink=document.querySelector('.rightLink');
+
 
 let bottomImg = document.querySelector(".bottomImg");
     //console.log(bottomImg);
@@ -56,6 +57,24 @@ let bottomImg = document.querySelector(".bottomImg");
     leftContent.innerHTML=sliderContent[leftIndex];
     mobileRightcontent.innerHTML=mobileContent[leftIndex];
     ipadContent.innerHTML=iPadContent[ipadIndex];
+    switch (sliderContent[rightIndex]) {
+      case "LEARN MORE":
+        rightLink.href="";
+        break;
+      case "CUSTOMERS":
+        rightLink.href="https://swiperjs.com/api/#events";
+        break;
+      case "ECOSYSTEM":
+        rightLink.href="https://stackoverflow.com/questions/4689344/how-can-i-add-href-attribute-to-a-link-dynamically-using-javascript";
+        break;
+      case "CREATORS":
+        rightLink.href="";
+        break;
+      case "BRANDS":
+        rightLink.href="";
+          break;
+      
+    }
     console.log(currentSlide);
     //console.log(sliderContent[rightIndex]);
     console.log(mobileContent[leftIndex]);
