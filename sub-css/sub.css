@@ -14,23 +14,23 @@
 }
 
 @font-face {
-  font-family: "Druk Text Wide Web";
-  src: local("Druk Text Wide Web") format("woff2");
+  font-family: 'Druk Text Wide Web';
+  src: local('Druk Text Wide Web') format('woff2');
 }
 
 @font-face {
-  font-family: "Druk Wide Cy Web";
-  src: local("Druk Wide Cy Web") format("woff2");
+  font-family: 'Druk Wide Cy Web';
+  src: local('Druk Wide Cy Web') format('woff2');
 }
 
 @font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") format("woff2");
+  font-family: 'Gilroy';
+  src: local('Gilroy') format('woff2');
 }
 
 @font-face {
-  font-family: "Gilroy-Bold";
-  src: local("Gilroy-Bold") format("woff2");
+  font-family: 'Gilroy-Bold';
+  src: local('Gilroy-Bold') format('woff2');
 }
 
 /*--- HEADER ---*/
@@ -67,7 +67,7 @@ nav ul li {
 }
 
 nav ul li a {
-  font-family: "Druk Text Wide Web";
+  font-family: 'Druk Text Wide Web';
   text-transform: uppercase;
   font-size: 0.875rem;
   text-decoration: none;
@@ -112,7 +112,7 @@ nav ul li a:hover {
 
 #instagram,
 #facebook {
-  font-family: "Druk Text Wide Web";
+  font-family: 'Druk Text Wide Web';
   text-transform: uppercase;
   font-size: 0.875rem;
   margin-bottom: 5vh;
@@ -133,7 +133,7 @@ nav ul li a:hover {
 }
 
 .section-content h3 {
-  font-family: "Druk Wide Cy Web";
+  font-family: 'Druk Wide Cy Web';
   font-size: 3.125rem;
   text-transform: uppercase;
   color: black;
@@ -143,7 +143,7 @@ nav ul li a:hover {
 }
 
 .section-content p {
-  font-family: "Gilroy";
+  font-family: 'Gilroy';
   font-size: 1.125rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -151,7 +151,7 @@ nav ul li a:hover {
 
 .sub-button,
 .submit-btn {
-  font-family: "Gilroy-Bold";
+  font-family: 'Gilroy-Bold';
   font-size: 0.75rem;
   text-transform: uppercase;
   color: var(--white-text);
@@ -249,7 +249,7 @@ video {
   align-self: end;
   margin-bottom: 5vh;
 
-  font-family: "Druk Text Wide Web";
+  font-family: 'Druk Text Wide Web';
   text-transform: uppercase;
   font-size: 0.875rem;
   text-decoration: none;
@@ -286,7 +286,7 @@ video {
 }
 
 .shops h3 {
-  font-family: "Druk Wide Cy Web";
+  font-family: 'Druk Wide Cy Web';
   font-size: 1.25rem;
   text-transform: uppercase;
   color: black;
@@ -295,10 +295,10 @@ video {
   -webkit-text-stroke-color: black;
 }
 
-.shop-images {
+/* .shop-images {
   display: flex;
   flex-direction: row;
-}
+} */
 
 .influencer-image {
   border: 1px solid black;
@@ -355,7 +355,7 @@ video {
 
 .form-group input,
 .form-textarea textarea {
-  font-family: "Gilroy";
+  font-family: 'Gilroy';
   font-size: 1rem;
   border: 1px solid #c4c4c4;
 }
@@ -400,7 +400,7 @@ video {
 }
 
 .newsletter h3 {
-  font-family: "Druk Wide Cy Web";
+  font-family: 'Druk Wide Cy Web';
   font-size: 1.25rem;
   text-transform: uppercase;
   color: black;
@@ -412,7 +412,7 @@ video {
 }
 
 .newsletter p {
-  font-family: "Gilroy";
+  font-family: 'Gilroy';
   font-size: 1.125rem;
   color: var(--black-text);
   margin-top: 1rem;
@@ -425,7 +425,7 @@ video {
   padding: 0.3rem;
   padding-bottom: 0.1rem;
 
-  font-family: "Gilroy-Bold";
+  font-family: 'Gilroy-Bold';
   font-size: 0.75rem;
   text-transform: uppercase;
   color: var(--white-text);
@@ -450,7 +450,7 @@ video {
   border-radius: 7px;
   outline: none;
   border: 1px solid #c4c4c4;
-  font-family: "Gilroy";
+  font-family: 'Gilroy';
   font-size: 1rem;
   border: 1px solid #c4c4c4;
 }
@@ -557,11 +557,54 @@ footer {
     padding: 1.3rem;
   }
 
-  .shop-images {
-    flex-wrap: wrap;
+  .shop-image {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .section-two .section-content {
     margin-bottom: 1rem;
   }
+}
+
+.shop-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.shop-image > a {
+  text-decoration: none;
+  background-color: transparent;
+}
+.community-circle {
+  display: block;
+  position: relative;
+  margin: 16px 8px;
+  transition: all 0.3s;
+}
+.community-circle picture {
+  position: relative;
+  width: 100%;
+  height: 0;
+  display: block;
+  padding-bottom: 100%;
+}
+.community-circle picture img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  box-shadow: 0 4px 16px 0 #c5c9d6;
+}
+.community-circle h3 {
+  position: static;
+  transform: none;
+  font-size: 14px;
+  color: #000;
+  font-style: normal;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
