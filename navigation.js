@@ -125,7 +125,7 @@ closeMenu.addEventListener('click', close);
 
 function linksOnSwiper(values, link) {
 
-    switch (values) {
+    /*switch (values) {
         case "LEARN MORE":
             link.href = "";
 
@@ -144,7 +144,7 @@ function linksOnSwiper(values, link) {
             link.href = "";
             break;
 
-    }
+    }*/
 }
 
 function show() {

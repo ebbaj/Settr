@@ -392,7 +392,6 @@ nav .mobileMainMenu {
     text-decoration: none;
     color: #ffffff;
     font-size: large;
-    font-weight: bolder;
 }
 
 .navlinkmobil-submenu a:first-of-type {
@@ -503,12 +502,10 @@ nav .logo {
 }
 
 .leftLink,
-.rightLink,.mobileLink {
+.rightLink,
+.mobileLink {
     color: #5C5A90
 }
-
-
-
 
 @-webkit-keyframes slide-bottom {
     0% {
@@ -531,9 +528,6 @@ nav .logo {
         transform: translateY(15px);
     }
 }
-
-
-
 
 @-webkit-keyframes vibrate-1 {
     0% {
@@ -890,7 +884,6 @@ h3 {
 @media(max-width: 800px) {
     .ipad {
         display: block;
-        
     }
     .right {
         display: none;
@@ -943,6 +936,8 @@ h3 {
         align-items: flex-end;
         flex-grow: 1;
         margin-top: 10px;
+        font-family: Druk;
+        font-style: normal;
     }
     .navlinkmobil a:not(:first-of-type) {
         margin-top: 20px;
@@ -951,7 +946,6 @@ h3 {
         margin-right: 20px;
         text-decoration: none;
         color: #000;
-        font-weight: bolder;
         font-size: 45px;
         transition: .321s;
     }
@@ -1009,7 +1003,7 @@ h3 {
         display: block;
     }
     .ipad {
-       display:none;
+        display: none;
     }
 }
 
