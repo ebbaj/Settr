@@ -81,12 +81,12 @@ var swiper = new Swiper('.swiper-container', {
             // do whatever
 
             /*on: {
-       slideChange: function () {
-      let index_currentSlide = swiper.realIndex,
-      currentSlide = swiper.slides[index_currentSlide]
-      //https://stackoverflow.com/questions/32945099/how-to-detect-current-slide-in-swiper-js
-      currentSlide.style.background = "red";
-      console.log(currentSlide);*/
+             slideChange: function () {
+            let index_currentSlide = swiper.realIndex,
+            currentSlide = swiper.slides[index_currentSlide]
+            //https://stackoverflow.com/questions/32945099/how-to-detect-current-slide-in-swiper-js
+            currentSlide.style.background = "red";
+            console.log(currentSlide);*/
 
         },
     },
@@ -103,15 +103,18 @@ var swiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-        0: { /* when window >=0px - webflow mobile landscape/portriat */
+        0: {
+            /* when window >=0px - webflow mobile landscape/portriat */
             slidesPerView: 1,
             spaceBetween: 65,
         },
-        767: { /* when window >= 767px - webflow tablet */
+        767: {
+            /* when window >= 767px - webflow tablet */
             slidesPerView: 2,
             spaceBetween: 30,
         },
-        988: { /* when window >= 988px - webflow desktop */
+        988: {
+            /* when window >= 988px - webflow desktop */
             slidesPerView: 3,
             spaceBetween: 30,
         }
