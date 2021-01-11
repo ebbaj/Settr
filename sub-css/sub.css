@@ -3,6 +3,8 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  text-decoration: none;
+  color: #000;
 }
 
 :root {
@@ -14,23 +16,23 @@
 }
 
 @font-face {
-  font-family: "Druk Text Wide Web";
-  src: local("Druk Text Wide Web") format("woff2");
+  font-family: 'Druk Text Wide Web';
+  src: local('Druk Text Wide Web') format('woff2');
 }
 
 @font-face {
-  font-family: "Druk Wide Cy Web";
-  src: local("Druk Wide Cy Web") format("woff2");
+  font-family: 'Druk Wide Cy Web';
+  src: local('Druk Wide Cy Web') format('woff2');
 }
 
 @font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy") format("woff2");
+  font-family: 'Gilroy';
+  src: local('Gilroy') format('woff2');
 }
 
 @font-face {
-  font-family: "Gilroy-Bold";
-  src: local("Gilroy-Bold") format("woff2");
+  font-family: 'Gilroy-Bold';
+  src: local('Gilroy-Bold') format('woff2');
 }
 
 /*--- HEADER ---*/
@@ -134,7 +136,7 @@ nav ul li a:hover {
 }
 
 .section-content h3 {
-  font-family: "Druk Wide Cy Web";
+  font-family: 'Druk Wide Cy Web';
   font-size: 3.125rem;
   text-transform: uppercase;
   color: black;
@@ -144,7 +146,7 @@ nav ul li a:hover {
 }
 
 .section-content p {
-  font-family: "Gilroy";
+  font-family: 'Gilroy';
   font-size: 1.125rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -152,7 +154,7 @@ nav ul li a:hover {
 
 .sub-button,
 .submit-btn {
-  font-family: "Gilroy-Bold";
+  font-family: 'Gilroy-Bold';
   font-size: 0.75rem;
   text-transform: uppercase;
   color: var(--white-text);
@@ -250,7 +252,7 @@ video {
   align-self: end;
   margin-bottom: 3rem;
 
-  font-family: "Druk Text Wide Web";
+  font-family: 'Druk Text Wide Web';
   text-transform: uppercase;
   font-size: 0.875rem;
   text-decoration: none;
@@ -287,7 +289,7 @@ video {
 }
 
 .shops h3 {
-  font-family: "Druk Wide Cy Web";
+  font-family: 'Druk Wide Cy Web';
   font-size: 1.25rem;
   text-transform: uppercase;
   color: black;
@@ -412,7 +414,7 @@ video {
 
 .form-group1 input,
 .form-textarea textarea {
-  font-family: "Gilroy";
+  font-family: 'Gilroy';
   font-size: 1rem;
   border: 1px solid #c4c4c4;
   border-radius: 3px;
