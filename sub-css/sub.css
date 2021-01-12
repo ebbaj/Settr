@@ -17,22 +17,23 @@
 
 @font-face {
   font-family: 'Druk Text Wide Web';
-  src: local('Druk Text Wide Web') format('woff2');
+  src: url(resources/fonts/druk/Druk/Text/Wide/Web/Medium/Regular.otf)
+    format('woff2');
 }
-
 @font-face {
   font-family: 'Druk Wide Cy Web';
-  src: local('Druk Wide Cy Web') format('woff2');
+  src: url(resources/fonts/druk/Druk/Wide/Cy/Web/Bold/Regular.ttf)
+    format('woff2');
 }
 
 @font-face {
   font-family: 'Gilroy';
-  src: local('Gilroy') format('woff2');
+  src: url(/resources/fonts/Gilroy/Gilroy-Regular.ttf) format('woff2');
 }
 
 @font-face {
   font-family: 'Gilroy-Bold';
-  src: local('Gilroy-Bold') format('woff2');
+  src: url(/resources/fonts/Gilroy/Gilroy-Bold.ttf) format('woff2');
 }
 
 /*--- HEADER ---*/
@@ -125,7 +126,7 @@ nav ul li a:hover {
 
 .main {
   grid-column: 2/3;
-  border: 1px solid #000000;
+  border: 1px solid #5c5a90;
   background-color: var(--main-background);
   border-radius: 3px;
 }
@@ -281,6 +282,9 @@ video {
 .section-two .section-content {
   margin-bottom: 6rem;
 }
+#brands-p {
+  text-align: left;
+}
 
 .shops {
   text-align: left;
@@ -337,6 +341,7 @@ video {
   color: #000;
   font-style: normal;
   margin-bottom: 0.5rem;
+  padding-top: 10px;
   text-align: center;
 }
 /*
@@ -392,7 +397,8 @@ video {
 
 /*--- SECTION FOUR ---*/
 .section-four {
-  height: 80vh;
+  /* height: 80vh; */
+  padding-bottom: 10px;
 }
 
 .section-four .section-content {
@@ -643,4 +649,8 @@ footer {
   .section-two .section-content {
     margin-bottom: 1rem;
   }
+}
+
+.sub-arrow {
+  padding-left: 10px;
 }
