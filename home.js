@@ -1,9 +1,3 @@
-const mainMenu = document.querySelector('.mobileMainMenu');
-const closeMenu = document.querySelector('.closeMenu');
-const openMenu = document.querySelector('.openMenu');
-const mobilNavFirstSubElement = document.querySelector('#mobilNavFirstSub');
-const mobilNavSecondSubElement = document.querySelector('#mobilNavSecondSub');
-const mobilNavThirdSubElement = document.querySelector('#mobilNavThirdSub');
 let mobileRightcontent = document.querySelector('.mobileRightcontent');
 let ipadContent = document.querySelector('.ipadContent');
 let leftLink = document.querySelector('.leftLink');
@@ -139,8 +133,7 @@ var swiper = new Swiper('.swiper-container', {
     },
 });
 
-openMenu.addEventListener('click', show);
-closeMenu.addEventListener('click', close);
+
 
 function linksOnSwiper(values, link) {
     switch (values) {
@@ -162,44 +155,4 @@ function linksOnSwiper(values, link) {
             link.href = 'brands.html';
             break;
     }
-}
-
-function show() {
-    mainMenu.style.display = 'flex';
-    mainMenu.style.transform = 'translateX(0)';
-}
-
-function close() {
-    mainMenu.style.transform = 'translateX(100%)';
-}
-
-function mobilNavFirstSub() {
-    if (mobilNavFirstSubElement.style.maxHeight === '200px') {
-        mobilNavFirstSubElement.style.maxHeight = '0';
-    } else {
-        mobilNavFirstSubElement.style.maxHeight = '200px';
-    }
-    mobilNavSecondSubElement.style.maxHeight = '0';
-    mobilNavThirdSubElement.style.maxHeight = '0';
-}
-
-function mobilNavSecondSub() {
-    console.log(143);
-    if (mobilNavSecondSubElement.style.maxHeight === '200px') {
-        mobilNavSecondSubElement.style.maxHeight = '0';
-    } else {
-        mobilNavSecondSubElement.style.maxHeight = '200px';
-    }
-    mobilNavFirstSubElement.style.maxHeight = '0';
-    mobilNavThirdSubElement.style.maxHeight = '0';
-}
-
-function mobilNavThirdSub() {
-    if (mobilNavThirdSubElement.style.maxHeight === '200px') {
-        mobilNavThirdSubElement.style.maxHeight = '0';
-    } else {
-        mobilNavThirdSubElement.style.maxHeight = '200px';
-    }
-    mobilNavFirstSubElement.style.maxHeight = '0';
-    mobilNavSecondSubElement.style.maxHeight = '0';
 }
